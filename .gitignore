@@ -3,6 +3,8 @@ github-copilot/
 iterm2/
 octoffers/
 nvim/lazy-lock.json
+alacrity/themes/*
+alacrity/themes/
 
 *.DS_Store
 
