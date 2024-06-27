@@ -1,0 +1,13 @@
+22:06:47.400790	Starting CLI	{"version": "0.126.0", "os": "darwin", "arch": "arm64", "current-time": "2024-06-19 22:06:47.400769 +0500 +05"}
+22:06:47.401388	Loading config file	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+22:06:47.402397	Selected profile	{"profile": "default"}
+22:06:47.402427	Updating values from flags
+22:06:47.402456	No authentication option specified in config. Going to check if compute instance SA authentication is available.
+22:06:47.403171	Check if compute instance SA authentication in metadata service is available failed.	{"error": "dial tcp 169.254.169.254:80: connect: network is unreachable"}
+err> ERROR: command name argument expected
+err> Usage:
+err>   yc <group|command> [optional flags]
+err> 
+err> For detailed information on this command and its flags, run:
+err>   yc --help
+err> 

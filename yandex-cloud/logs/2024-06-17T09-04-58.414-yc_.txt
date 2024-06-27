@@ -1,0 +1,14 @@
+09:04:58.415192	Starting CLI	{"version": "0.126.0", "os": "darwin", "arch": "arm64", "current-time": "2024-06-17 09:04:58.415178 +0500 +05"}
+09:04:58.416132	Loading config file	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:04:58.416852	Config file not found	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:04:58.416872	Selected profile	{"profile": "default"}
+09:04:58.416896	Updating values from flags
+09:04:58.416914	No authentication option specified in config. Going to check if compute instance SA authentication is available.
+09:04:58.468687	Check if compute instance SA authentication in metadata service is available failed.	{"error": "dial tcp 169.254.169.254:80: i/o timeout"}
+err> ERROR: command name argument expected
+err> Usage:
+err>   yc <group|command> [optional flags]
+err> 
+err> For detailed information on this command and its flags, run:
+err>   yc --help
+err> 

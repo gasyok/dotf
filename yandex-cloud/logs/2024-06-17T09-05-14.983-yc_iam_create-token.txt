@@ -1,0 +1,14 @@
+09:05:14.983833	Starting CLI	{"version": "0.126.0", "os": "darwin", "arch": "arm64", "current-time": "2024-06-17 09:05:14.983826 +0500 +05"}
+09:05:14.983920	Loading config file	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:05:14.983939	Config file not found	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:05:14.983944	Selected profile	{"profile": "default"}
+09:05:14.983972	Updating values from flags
+09:05:14.983994	No authentication option specified in config. Going to check if compute instance SA authentication is available.
+09:05:15.035121	Check if compute instance SA authentication in metadata service is available failed.	{"error": "dial tcp 169.254.169.254:80: i/o timeout"}
+err> ERROR: Failed to get credentials
+err> No 'token', 'federation-id', 'service-account-key' or 'instance-service-account' API credentials properties are set.
+err> Use 'yc init' for interactive profile configuration, using OAuth token or set one property using:
+err>     yc config set token <yandex-cloud-OAuth-token>
+err>     yc config set federation-id <FEDERATION-ID>
+err>     yc config set service-account-key <path-to-service-account-key-file>
+err>     yc config set instance-service-account true

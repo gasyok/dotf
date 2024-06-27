@@ -1,0 +1,10 @@
+09:04:30.160758	Starting CLI	{"version": "0.126.0", "os": "darwin", "arch": "arm64", "current-time": "2024-06-17 09:04:30.160732 +0500 +05"}
+09:04:30.160924	Loading config file	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:04:30.161002	Config file not found	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:04:30.161008	Selected profile	{"profile": "default"}
+09:04:30.161039	Updating values from flags
+09:04:30.161074	No authentication option specified in config. Going to check if compute instance SA authentication is available.
+09:04:30.212249	Check if compute instance SA authentication in metadata service is available failed.	{"error": "dial tcp 169.254.169.254:80: i/o timeout"}
+out> Yandex Cloud CLI 0.126.0 darwin/arm64
+09:04:30.227027	Short command, don't wait for check result.
+09:04:30.227063	Command execution finished

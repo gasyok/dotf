@@ -1,0 +1,107 @@
+09:05:53.506878	Starting CLI	{"version": "0.126.0", "os": "darwin", "arch": "arm64", "current-time": "2024-06-17 09:05:53.506871 +0500 +05"}
+09:05:53.506959	Loading config file	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:05:53.506976	Config file not found	{"path": "/Users/gas/.config/yandex-cloud/config.yaml"}
+09:05:53.506982	Selected profile	{"profile": "default"}
+09:05:53.507008	Updating values from flags
+09:05:53.507028	No authentication option specified in config. Going to check if compute instance SA authentication is available.
+09:05:53.558160	Check if compute instance SA authentication in metadata service is available failed.	{"error": "dial tcp 169.254.169.254:80: i/o timeout"}
+09:05:53.569261	unable to read update-check cache file	{"error": "open /Users/gas/.config/yandex-cloud/.last_update_check.json: no such file or directory"}
+09:05:53.569312	Update check started.
+09:05:53.570550	grpc	[core][Channel #1] Channel created
+09:05:53.571739	grpc	[core][Channel #1] original dial target is: "api.cloud.yandex.net:443"
+09:05:53.571755	grpc	[core][Channel #1] parsed dial target is: {URL:{Scheme:api.cloud.yandex.net Opaque:443 User: Host: Path: RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}
+09:05:53.571760	grpc	[core][Channel #1] fallback to scheme "passthrough"
+09:05:53.571767	grpc	[core][Channel #1] parsed dial target is: {URL:{Scheme:passthrough Opaque: User: Host: Path:/api.cloud.yandex.net:443 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}
+09:05:53.571773	grpc	[core][Channel #1] Channel authority set to "api.cloud.yandex.net:443"
+09:05:53.573230	grpc	[core][Channel #1] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "api.cloud.yandex.net:443",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)
+09:05:53.573416	grpc	[core][Channel #1] Channel switches to new LB policy "pick_first"
+09:05:53.573675	grpc	[core][Channel #1 SubChannel #2] Subchannel created
+09:05:53.573688	grpc	[core][Channel #1] Channel Connectivity change to CONNECTING
+09:05:53.574125	grpc	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING
+09:05:53.574188	grpc	[core][Channel #1 SubChannel #2] Subchannel picks a new address "api.cloud.yandex.net:443" to connect
+09:05:53.574210	grpc	[core]pickfirstBalancer: UpdateSubConnState: 0x14001b060f0, {CONNECTING <nil>}
+09:05:53.574439	grpc	Dialing api.cloud.yandex.net:443 with timeout 19.999499958s
+09:05:53.729136	grpc	Dial api.cloud.yandex.net:443 successfully connected to: 84.201.181.26:443
+09:05:53.890012	grpc	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY
+09:05:53.890243	grpc	[core]pickfirstBalancer: UpdateSubConnState: 0x14001b060f0, {READY <nil>}
+09:05:53.890326	grpc	[core][Channel #1] Channel Connectivity change to READY
+09:05:53.890504	Request  ApiEndpointService/List	{"request": {"method":"/yandex.cloud.endpoint.ApiEndpointService/List","header":{"idempotency-key":["001e23bf-362c-4a2f-a9d1-1670205bd567"],"x-client-request-id":["7aff9f1b-5e5a-49fe-8912-7e58e8d83636"],"x-client-trace-id":["ebc11196-8388-4671-b5d1-d02b75ef1f9c"]},"payload":{"page_size":"100"}}}
+09:05:53.916619	Update check finished. Current version is up to date.
+09:05:53.966276	Response ApiEndpointService/List	{"response": {"method":"/yandex.cloud.endpoint.ApiEndpointService/List","header":{"content-type":["application/grpc"],"date":["Mon, 17 Jun 2024 04:05:53 GMT"],"server":["ycapi"],"x-request-id":["9d91f2ed-6dd2-42d0-9fde-60e70ae947a4"],"x-server-trace-id":["c8415d9a4f2fdd0:3f2f231df3a09a3d:c8415d9a4f2fdd0:1"]},"payload":{"endpoints":[{"id":"ai-foundation-models","address":"llm.api.cloud.yandex.net:443"},{"id":"ai-llm","address":"llm.api.cloud.yandex.net:443"},{"id":"ai-speechkit","address":"transcribe.api.cloud.yandex.net:443"},{"id":"ai-stt","address":"transcribe.api.cloud.yandex.net:443"},{"id":"ai-stt-v3","address":"stt.api.cloud.yandex.net:443"},{"id":"ai-translate","address":"translate.api.cloud.yandex.net:443"},{"id":"ai-vision","address":"vision.api.cloud.yandex.net:443"},{"id":"ai-vision-ocr","address":"ocr.api.cloud.yandex.net:443"},{"id":"alb","address":"alb.api.cloud.yandex.net:443"},{"id":"apigateway-connections","address":"apigateway-connections.api.cloud.yandex.net:443"},{"id":"application-load-balancer","address":"alb.api.cloud.yandex.net:443"},{"id":"apploadbalancer","address":"alb.api.cloud.yandex.net:443"},{"id":"audittrails","address":"audittrails.api.cloud.yandex.net:443"},{"id":"baas","address":"backup.api.cloud.yandex.net:443"},{"id":"backup","address":"backup.api.cloud.yandex.net:443"},{"id":"billing","address":"billing.api.cloud.yandex.net:443"},{"id":"broker-data","address":"iot-data.api.cloud.yandex.net:443"},{"id":"cdn","address":"cdn.api.cloud.yandex.net:443"},{"id":"certificate-manager","address":"certificate-manager.api.cloud.yandex.net:443"},{"id":"certificate-manager-data","address":"data.certificate-manager.api.cloud.yandex.net:443"},{"id":"cloudbackup","address":"backup.api.cloud.yandex.net:443"},{"id":"clouddesktops","address":"clouddesktops.api.cloud.yandex.net:443"},{"id":"cloudvideo","address":"video.api.cloud.yandex.net:443"},{"id":"compute","address":"compute.api.cloud.yandex.net:443"},{"id":"container-registry","address":"container-registry.api.cloud.yandex.net:443"},{"id":"dataproc","address":"dataproc.api.cloud.yandex.net:443"},{"id":"dataproc-manager","address":"dataproc-manager.api.cloud.yandex.net:443"},{"id":"datasphere","address":"datasphere.api.cloud.yandex.net:443"},{"id":"datatransfer","address":"datatransfer.api.cloud.yandex.net:443"},{"id":"dns","address":"dns.api.cloud.yandex.net:443"},{"id":"endpoint","address":"api.cloud.yandex.net:443"},{"id":"iam","address":"iam.api.cloud.yandex.net:443"},{"id":"iot-broker","address":"iot-broker.api.cloud.yandex.net:443"},{"id":"iot-data","address":"iot-data.api.cloud.yandex.net:443"},{"id":"iot-devices","address":"iot-devices.api.cloud.yandex.net:443"},{"id":"k8s","address":"mks.api.cloud.yandex.net:443"},{"id":"kms","address":"kms.api.cloud.yandex.net:443"},{"id":"kms-crypto","address":"kms.yandex:443"},{"id":"load-balancer","address":"load-balancer.api.cloud.yandex.net:443"},{"id":"loadtesting","address":"loadtesting.api.cloud.yandex.net:443"},{"id":"locator","address":"locator.api.cloud.yandex.net:443"},{"id":"lockbox","address":"lockbox.api.cloud.yandex.net:443"},{"id":"lockbox-payload","address":"payload.lockbox.api.cloud.yandex.net:443"},{"id":"log-ingestion","address":"ingester.logging.yandexcloud.net:443"},{"id":"log-reading","address":"reader.logging.yandexcloud.net:443"},{"id":"logging","address":"logging.api.cloud.yandex.net:443"},{"id":"managed-clickhouse","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-elasticsearch","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-greenplum","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-kafka","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-kubernetes","address":"mks.api.cloud.yandex.net:443"},{"id":"managed-mongodb","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-mysql","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-opensearch","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-postgresql","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-redis","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-sqlserver","address":"mdb.api.cloud.yandex.net:443"},{"id":"marketplace","address":"marketplace.api.cloud.yandex.net:443"},{"id":"mdb-clickhouse","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-mongodb","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-mysql","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-opensearch","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-postgresql","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-redis","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdbproxy","address":"mdbproxy.api.cloud.yandex.net:443"},{"id":"monitoring","address":"monitoring.api.cloud.yandex.net:443"},{"id":"operation","address":"operation.api.cloud.yandex.net:443"},{"id":"organization-manager","address":"organization-manager.api.cloud.yandex.net:443"},{"id":"organizationmanager","address":"organization-manager.api.cloud.yandex.net:443"},{"id":"resource-manager","address":"resource-manager.api.cloud.yandex.net:443"},{"id":"resourcemanager","address":"resource-manager.api.cloud.yandex.net:443"},{"id":"serialssh","address":"serialssh.cloud.yandex.net:9600"},{"id":"serverless-apigateway","address":"serverless-apigateway.api.cloud.yandex.net:443"},{"id":"serverless-containers","address":"serverless-containers.api.cloud.yandex.net:443"},{"id":"serverless-functions","address":"serverless-functions.api.cloud.yandex.net:443"},{"id":"serverless-gateway-connections","address":"apigateway-connections.api.cloud.yandex.net:443"},{"id":"serverless-triggers","address":"serverless-triggers.api.cloud.yandex.net:443"},{"id":"smart-captcha","address":"smartcaptcha.api.cloud.yandex.net:443"},{"id":"smart-web-security","address":"smartwebsecurity.api.cloud.yandex.net:443"},{"id":"storage","address":"storage.yandexcloud.net:443"},{"id":"storage-api","address":"storage.api.cloud.yandex.net:443"},{"id":"video","address":"video.api.cloud.yandex.net:443"},{"id":"vpc","address":"vpc.api.cloud.yandex.net:443"},{"id":"ydb","address":"ydb.api.cloud.yandex.net:443"}]}}}
+09:05:53.967093	Request  ApiEndpointService/List	{"request": {"method":"/yandex.cloud.endpoint.ApiEndpointService/List","header":{"idempotency-key":["6d38461e-990a-4e3d-86a3-d0378db90fbc"],"x-client-request-id":["085c65ee-33cf-43e1-a3e7-6661157c13f8"],"x-client-trace-id":["ebc11196-8388-4671-b5d1-d02b75ef1f9c"]},"payload":{}}}
+09:05:54.038122	Response ApiEndpointService/List	{"response": {"method":"/yandex.cloud.endpoint.ApiEndpointService/List","header":{"content-type":["application/grpc"],"date":["Mon, 17 Jun 2024 04:05:53 GMT"],"server":["ycapi"],"x-request-id":["3d210ac3-bcfc-491a-a8d9-16eec4b08902"],"x-server-trace-id":["f63695fcf4bcf386:d50607a09a2081f9:f63695fcf4bcf386:1"]},"payload":{"endpoints":[{"id":"ai-foundation-models","address":"llm.api.cloud.yandex.net:443"},{"id":"ai-llm","address":"llm.api.cloud.yandex.net:443"},{"id":"ai-speechkit","address":"transcribe.api.cloud.yandex.net:443"},{"id":"ai-stt","address":"transcribe.api.cloud.yandex.net:443"},{"id":"ai-stt-v3","address":"stt.api.cloud.yandex.net:443"},{"id":"ai-translate","address":"translate.api.cloud.yandex.net:443"},{"id":"ai-vision","address":"vision.api.cloud.yandex.net:443"},{"id":"ai-vision-ocr","address":"ocr.api.cloud.yandex.net:443"},{"id":"alb","address":"alb.api.cloud.yandex.net:443"},{"id":"apigateway-connections","address":"apigateway-connections.api.cloud.yandex.net:443"},{"id":"application-load-balancer","address":"alb.api.cloud.yandex.net:443"},{"id":"apploadbalancer","address":"alb.api.cloud.yandex.net:443"},{"id":"audittrails","address":"audittrails.api.cloud.yandex.net:443"},{"id":"baas","address":"backup.api.cloud.yandex.net:443"},{"id":"backup","address":"backup.api.cloud.yandex.net:443"},{"id":"billing","address":"billing.api.cloud.yandex.net:443"},{"id":"broker-data","address":"iot-data.api.cloud.yandex.net:443"},{"id":"cdn","address":"cdn.api.cloud.yandex.net:443"},{"id":"certificate-manager","address":"certificate-manager.api.cloud.yandex.net:443"},{"id":"certificate-manager-data","address":"data.certificate-manager.api.cloud.yandex.net:443"},{"id":"cloudbackup","address":"backup.api.cloud.yandex.net:443"},{"id":"clouddesktops","address":"clouddesktops.api.cloud.yandex.net:443"},{"id":"cloudvideo","address":"video.api.cloud.yandex.net:443"},{"id":"compute","address":"compute.api.cloud.yandex.net:443"},{"id":"container-registry","address":"container-registry.api.cloud.yandex.net:443"},{"id":"dataproc","address":"dataproc.api.cloud.yandex.net:443"},{"id":"dataproc-manager","address":"dataproc-manager.api.cloud.yandex.net:443"},{"id":"datasphere","address":"datasphere.api.cloud.yandex.net:443"},{"id":"datatransfer","address":"datatransfer.api.cloud.yandex.net:443"},{"id":"dns","address":"dns.api.cloud.yandex.net:443"},{"id":"endpoint","address":"api.cloud.yandex.net:443"},{"id":"iam","address":"iam.api.cloud.yandex.net:443"},{"id":"iot-broker","address":"iot-broker.api.cloud.yandex.net:443"},{"id":"iot-data","address":"iot-data.api.cloud.yandex.net:443"},{"id":"iot-devices","address":"iot-devices.api.cloud.yandex.net:443"},{"id":"k8s","address":"mks.api.cloud.yandex.net:443"},{"id":"kms","address":"kms.api.cloud.yandex.net:443"},{"id":"kms-crypto","address":"kms.yandex:443"},{"id":"load-balancer","address":"load-balancer.api.cloud.yandex.net:443"},{"id":"loadtesting","address":"loadtesting.api.cloud.yandex.net:443"},{"id":"locator","address":"locator.api.cloud.yandex.net:443"},{"id":"lockbox","address":"lockbox.api.cloud.yandex.net:443"},{"id":"lockbox-payload","address":"payload.lockbox.api.cloud.yandex.net:443"},{"id":"log-ingestion","address":"ingester.logging.yandexcloud.net:443"},{"id":"log-reading","address":"reader.logging.yandexcloud.net:443"},{"id":"logging","address":"logging.api.cloud.yandex.net:443"},{"id":"managed-clickhouse","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-elasticsearch","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-greenplum","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-kafka","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-kubernetes","address":"mks.api.cloud.yandex.net:443"},{"id":"managed-mongodb","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-mysql","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-opensearch","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-postgresql","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-redis","address":"mdb.api.cloud.yandex.net:443"},{"id":"managed-sqlserver","address":"mdb.api.cloud.yandex.net:443"},{"id":"marketplace","address":"marketplace.api.cloud.yandex.net:443"},{"id":"mdb-clickhouse","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-mongodb","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-mysql","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-opensearch","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-postgresql","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdb-redis","address":"mdb.api.cloud.yandex.net:443"},{"id":"mdbproxy","address":"mdbproxy.api.cloud.yandex.net:443"},{"id":"monitoring","address":"monitoring.api.cloud.yandex.net:443"},{"id":"operation","address":"operation.api.cloud.yandex.net:443"},{"id":"organization-manager","address":"organization-manager.api.cloud.yandex.net:443"},{"id":"organizationmanager","address":"organization-manager.api.cloud.yandex.net:443"},{"id":"resource-manager","address":"resource-manager.api.cloud.yandex.net:443"},{"id":"resourcemanager","address":"resource-manager.api.cloud.yandex.net:443"},{"id":"serialssh","address":"serialssh.cloud.yandex.net:9600"},{"id":"serverless-apigateway","address":"serverless-apigateway.api.cloud.yandex.net:443"},{"id":"serverless-containers","address":"serverless-containers.api.cloud.yandex.net:443"},{"id":"serverless-functions","address":"serverless-functions.api.cloud.yandex.net:443"},{"id":"serverless-gateway-connections","address":"apigateway-connections.api.cloud.yandex.net:443"},{"id":"serverless-triggers","address":"serverless-triggers.api.cloud.yandex.net:443"},{"id":"smart-captcha","address":"smartcaptcha.api.cloud.yandex.net:443"},{"id":"smart-web-security","address":"smartwebsecurity.api.cloud.yandex.net:443"},{"id":"storage","address":"storage.yandexcloud.net:443"},{"id":"storage-api","address":"storage.api.cloud.yandex.net:443"},{"id":"video","address":"video.api.cloud.yandex.net:443"},{"id":"vpc","address":"vpc.api.cloud.yandex.net:443"},{"id":"ydb","address":"ydb.api.cloud.yandex.net:443"}]}}}
+09:05:54.039089	grpc	[core][Channel #4] Channel created
+09:05:54.039202	grpc	[core][Channel #4] original dial target is: "iam.api.cloud.yandex.net:443"
+09:05:54.039281	grpc	[core][Channel #4] parsed dial target is: {URL:{Scheme:iam.api.cloud.yandex.net Opaque:443 User: Host: Path: RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}
+09:05:54.039335	grpc	[core][Channel #4] fallback to scheme "passthrough"
+09:05:54.039467	grpc	[core][Channel #4] parsed dial target is: {URL:{Scheme:passthrough Opaque: User: Host: Path:/iam.api.cloud.yandex.net:443 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}
+09:05:54.039517	grpc	[core][Channel #4] Channel authority set to "iam.api.cloud.yandex.net:443"
+09:05:54.039699	grpc	[core][Channel #4] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "iam.api.cloud.yandex.net:443",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)
+09:05:54.039861	grpc	[core][Channel #4] Channel switches to new LB policy "pick_first"
+09:05:54.039956	grpc	[core][Channel #4 SubChannel #5] Subchannel created
+09:05:54.040009	grpc	[core][Channel #4] Channel Connectivity change to CONNECTING
+09:05:54.040083	grpc	[core][Channel #4 SubChannel #5] Subchannel Connectivity change to CONNECTING
+09:05:54.040169	grpc	[core][Channel #4 SubChannel #5] Subchannel picks a new address "iam.api.cloud.yandex.net:443" to connect
+09:05:54.040208	grpc	[core]pickfirstBalancer: UpdateSubConnState: 0x14000f4e138, {CONNECTING <nil>}
+09:05:54.040232	grpc	Dialing iam.api.cloud.yandex.net:443 with timeout 19.999829625s
+09:05:54.196767	grpc	Dial iam.api.cloud.yandex.net:443 successfully connected to: 84.201.181.26:443
+09:05:54.346371	grpc	[core][Channel #4 SubChannel #5] Subchannel Connectivity change to READY
+09:05:54.346558	grpc	[core]pickfirstBalancer: UpdateSubConnState: 0x14000f4e138, {READY <nil>}
+09:05:54.346639	grpc	[core][Channel #4] Channel Connectivity change to READY
+09:05:54.346740	grpc	[core][Channel #7] Channel created
+09:05:54.346802	grpc	[core][Channel #7] original dial target is: "resource-manager.api.cloud.yandex.net:443"
+09:05:54.346869	grpc	[core][Channel #7] parsed dial target is: {URL:{Scheme:resource-manager.api.cloud.yandex.net Opaque:443 User: Host: Path: RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}
+09:05:54.346911	grpc	[core][Channel #7] fallback to scheme "passthrough"
+09:05:54.346968	grpc	[core][Channel #7] parsed dial target is: {URL:{Scheme:passthrough Opaque: User: Host: Path:/resource-manager.api.cloud.yandex.net:443 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}
+09:05:54.347009	grpc	[core][Channel #7] Channel authority set to "resource-manager.api.cloud.yandex.net:443"
+09:05:54.347145	grpc	[core][Channel #7] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "resource-manager.api.cloud.yandex.net:443",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)
+09:05:54.347263	grpc	[core][Channel #7] Channel switches to new LB policy "pick_first"
+09:05:54.347342	grpc	[core][Channel #7 SubChannel #8] Subchannel created
+09:05:54.347387	grpc	[core][Channel #7] Channel Connectivity change to CONNECTING
+09:05:54.347494	grpc	[core][Channel #7 SubChannel #8] Subchannel Connectivity change to CONNECTING
+09:05:54.347634	grpc	[core][Channel #7 SubChannel #8] Subchannel picks a new address "resource-manager.api.cloud.yandex.net:443" to connect
+09:05:54.347694	grpc	[core]pickfirstBalancer: UpdateSubConnState: 0x14000f4f1a0, {CONNECTING <nil>}
+09:05:54.347703	grpc	Dialing resource-manager.api.cloud.yandex.net:443 with timeout 19.99975675s
+09:05:54.515660	grpc	Dial resource-manager.api.cloud.yandex.net:443 successfully connected to: 84.201.181.26:443
+09:05:54.652647	grpc	[core][Channel #7 SubChannel #8] Subchannel Connectivity change to READY
+09:05:54.652874	grpc	[core]pickfirstBalancer: UpdateSubConnState: 0x14000f4f1a0, {READY <nil>}
+09:05:54.652962	grpc	[core][Channel #7] Channel Connectivity change to READY

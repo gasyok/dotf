@@ -1,8 +1,11 @@
+# import = [
+#     "~/.config/alacritty/themes/themes/coolnight.toml"
+# ]
 import = [
-    "~/.config/alacritty/themes/themes/coolnight.toml"
+    "~/.config/alacritty/themes/themes/github_dark_colorblind.toml"
 ]
 # import = [
-#     "~/.config/alacritty/themes/themes/bluish.toml"
+#     "~/.config/alacritty/themes/themes/ubuntu.toml"
 # ]
 [env]
 TERM = "xterm-256color"
@@ -30,8 +33,8 @@ save_to_clipboard = true
 
 [keyboard]
 bindings = [
-  { key = "F", mods = "Control|Shift", action = "ToggleFullscreen" },
-  { key = "M", mods = "Control|Shift", action = "ToggleMaximized" },
+  { key= "F", mods = "Control|Shift", action = "ToggleFullscreen" },
+  { key= "M", mods = "Control|Shift", action = "ToggleMaximized" },
   { key= "Q", mods= "Control|Shift", action= "Quit" },
   { key= "H", mods= "Control|Shift", action= "Hide" },
 ]
